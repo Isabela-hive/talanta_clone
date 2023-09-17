@@ -1,0 +1,80 @@
+.training-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  flex-direction: column;
+}
+.training-card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  font-family: genbold;
+
+  color: var(--success);
+}
+.card-roww {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 90%;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.card-academy {
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 0.3rem;
+  box-shadow: inset 0 2px 6px rgba(142, 139, 139, 0.919);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-academy img {
+  width: 100%;
+  /* height: 100%; */
+  /* display: block; */
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 0 2px 6px rgba(142, 139, 139, 0.919);
+}
+
+.card-content {
+  padding: 15px;
+  position: absolute;
+  bottom: 4%;
+
+  font-family: gennorm;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-content h3 {
+  margin-bottom: 2rem;
+  background-color: aqua;
+}
+
+.card-content p {
+  margin: 10px 0;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: var(--success);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.card-content a:hover {
+  background-color: var(--white);
+  color: var(--success);
+}

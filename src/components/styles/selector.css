@@ -1,0 +1,184 @@
+.ste {
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.ste h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: -3rem;
+  font-family: genbold;
+}
+.ste h1 span {
+  color: var(--error);
+  font-size: 2rem;
+  font-family: genbold;
+}
+.steps {
+  width: 98%;
+  position: relative;
+  display: flex;
+  margin-top: 0;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stps-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+.cardst {
+  display: flex;
+  margin: -10rem -3rem;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: gennorm;
+  color: var(--b);
+  transition: 0.3s ease;
+}
+
+h3.title {
+  background: #fc0001;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 7px;
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.474);
+}
+
+.cardst .content-container {
+  width: 200px;
+  font-family: gennorm;
+  color: var(--b);
+  font-size: 0.9rem;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.cardst:nth-child(even) {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardst:nth-child(even) .title {
+  border-radius: 0 0 10px 10px;
+  margin-top: 1rem;
+}
+.selector {
+  position: absolute;
+  width: 100%;
+  bottom: 30%;
+  height: 2%;
+  background: linear-gradient(
+    90deg,
+    #fc0001 0%,
+    #000 33.33%,
+    green 62.5%,
+    #d26d0d 100%
+  );
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selector .checker {
+  width: 1%;
+  height: 1.2%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin-left: 0.6rem;
+  align-items: center;
+
+  background-color: white;
+  padding: 1rem;
+}
+
+.selector .checker.red {
+  border: 0.8rem solid #fc0001;
+}
+
+.selector .checker.black {
+  border: 0.8rem solid #000;
+}
+
+.selector .checker.green {
+  border: 0.8rem solid green;
+}
+
+.selector .checker.orange {
+  border: 0.8rem solid #d26d0d;
+}
+/* Updated selector.css */
+/* Original styles */
+
+/* Add this media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .stps-card {
+    flex-direction: row;
+    /* margin-bottom: 4rem; */
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .cardst {
+    width: 90%;
+    margin: -10rem -3rem;
+    border-radius: 10px;
+  }
+
+  .content-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .arrow {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .content {
+    font-size: 12px;
+    width: 100px;
+  }
+  h3.title {
+    width: 100px;
+    font-size: 16px;
+    padding: 10px 4px;
+  }
+  /* Adjust the positioning of the selectors */
+
+  .checker {
+    width: 1.1rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem; /* Add margin to space out the selectors */
+  }
+}

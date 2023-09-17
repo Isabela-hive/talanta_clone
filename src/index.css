@@ -1,13 +1,63 @@
-body {
+:root {
+  --black: black;
+  --b: rgba(5, 5, 5, 0.923);
+  --lightBlack: #333;
+  --bg: #8888885d;
+  --fresh: #ddd;
+  --w: #ddddddd5;
+  --white: #fff;
+  --lightWhite: #777;
+  --error: rgb(228, 44, 38);
+  --default: rgb(49, 97, 153);
+  --success: green;
+  --beige: beige;
+}
+@font-face {
+  font-family: gennorm;
+  src: url("./assets/fonts/GeneralSans-Regular.woff") format("truetype");
+}
+@font-face {
+  font-family: genbold;
+  src: url("./assets/fonts/GeneralSans-Bold.woff") format("truetype");
+}
+@font-face {
+  font-family: genlight;
+  src: url("./assets/fonts/GeneralSans-Extralight.woff") format("truetype");
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gennorm;
+}
+body {
+  background: var(--white);
+  color: var(--black);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .app {
+    min-height: 80vh;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    min-height: 60vh;
+    padding: 10px;
+  }
 }
