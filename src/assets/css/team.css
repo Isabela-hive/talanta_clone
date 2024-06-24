@@ -1,0 +1,59 @@
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-list .member {
+  width: 200px;
+  margin-bottom: 1.75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.team-list .photo-section {
+  /* background-color: var(--bg); */
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80%;
+  overflow: hidden;
+}
+
+.team-list .photo-section .photo-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.team-list .photo-section .photo-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+
+  border: 2px solid var(--bg);
+}
+
+.team-list .name-role {
+  /* background-color: var(--fresh); */
+  padding: 0.25rem 0.75rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.team-list .name-role .name {
+  margin-bottom: 0.125rem;
+  font-size: large;
+  font-weight: 800;
+}
+
+.team-list .name-role .role {
+  margin-bottom: 0.125rem;
+  font-size: medium;
+  font-weight: 500;
+}

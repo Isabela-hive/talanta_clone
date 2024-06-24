@@ -37,7 +37,9 @@ const CustomNavbar = () => {
   return (
     <Navbar
       expand="lg"
-      className={`bg-body-tertiary ${isHome ? "nav1" : "nav"}`}
+      className={`bg-body-tertiary navbar navbar-light navbar-expand-lg topnav-menu ${
+        isHome ? "nav1" : "nav"
+      }`}
     >
       <Container>
         <Navbar.Brand>
@@ -48,9 +50,9 @@ const CustomNavbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="w-100">
-          <Nav className="me-auto nav-items">
+          <Nav className="me-auto nav-items ps-3 fs-5 d-flex align-items-center justify-content-center flex-grow-1">
             {!isHome && (
-              <Link to="/" className="link">
+              <Link to="/" className=" nav-link  me-2">
                 <span>Home</span>
               </Link>
             )}
@@ -62,15 +64,17 @@ const CustomNavbar = () => {
               >
                 {item.links.map((link, linkIndex) => (
                   <NavDropdown.Item key={linkIndex}>
-                    <Link to={`#${link}`}>{link}</Link>
+                    <Link to={`/${link}`} className="a">
+                      {link}
+                    </Link>
                   </NavDropdown.Item>
                 ))}
               </NavDropdown>
             ))}
-            <Link to="/about" className="link">
+            <Link to="/about" className="nav-link  me-2">
               <span>About</span>
             </Link>
-            <Link to="/partners" className="link">
+            <Link to="/partners" className="nav-link  me-2">
               <span>Partners</span>
             </Link>
           </Nav>

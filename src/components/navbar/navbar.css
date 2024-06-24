@@ -35,6 +35,7 @@
   align-items: center;
   margin: 0 auto;
 }
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -86,4 +87,14 @@
 .sign {
   background: var(--success);
   color: var(--fresh);
+}
+
+.topnav .navbar-collapse {
+  padding-top: calc(30vh * 0.6);
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  position: relative;
+  padding: 1rem 1.3rem;
 }
